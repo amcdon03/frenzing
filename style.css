@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    background: url("images/notebook-2247351_1920.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.first {
+    background: url("images/personal-2923048_1920.jpg");
+}
+h1 {
+    font-family: "Pattaya";
+}
+
+h2 {
+    font-family: "Comfortaa";
+}
