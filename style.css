@@ -1,16 +1,29 @@
 body {
+    margin: 0 auto;
     text-align: center;
-    background: url("images/notebook-2247351_1920.jpg");
-    background-size: cover;
-    background-position: center;
 }
-.first {
+header {
+    height: 600px;
     background: url("images/personal-2923048_1920.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+ul {
+    margin-top: auto;
+    padding: 10px;
+    background: black;
+}
+li {
+    display: inline;
+    padding: 0px 20px 0px 20px;
 }
 h1 {
     font-family: "Pattaya";
+    font-size: 70px;
 }
 
 h2 {
     font-family: "Comfortaa";
+    font-size: 35px;
 }
