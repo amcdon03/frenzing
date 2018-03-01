@@ -10,20 +10,20 @@ header {
     color: white;
 }
 ul {
-    margin-top: auto;
+    margin: 400px;
     padding: 10px;
-    background: black;
+    background: #000;
 }
 li {
     display: inline;
     padding: 0px 20px 0px 20px;
 }
 h1 {
-    font-family: "Pattaya";
+    font-family: "Londrina Shadow", cursive;
     font-size: 70px;
 }
 
 h2 {
-    font-family: "Comfortaa";
+    font-family: "Pattaya";
     font-size: 35px;
 }
