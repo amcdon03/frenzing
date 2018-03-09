@@ -3,7 +3,7 @@
 body {
     padding: 2em;
     text-align: center;
-    background: url("images/notebook-2247351_1920.jpg");
+    background: url("images/people-2563491_1920.jpg");
     background-size: cover;
 }
 .container {
@@ -24,6 +24,15 @@ body {
     align-items: center;
     padding: 20px;
 }
+.h1 {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 70px;
+}
+
+.h2 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 35px;
+}
 .logo {
     text-decoration: none;
     color: aqua;
@@ -33,7 +42,7 @@ body {
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0px;
+    padding: 10px;
     }
     a {
         text-transform: uppercase;
@@ -50,55 +59,35 @@ body {
     align-items: center;
 }
 .main {
-    text-align: left;
+    text-align: center;
+    background: pink;
 }
 .aside-1 {
-    background: transparent;
+    background: blue;
 }
 .aside-2 {
-    background: transparent;
+    background: green;
 }
-
-.h1 {
-    font-family: 'Londrina Shadow', cursive;
-    font-size: 70px;
-}
-
-.h2 .h3 {
-    font-family: 'Pattaya', sans-serif;
-    font-size: 35px;
+.footer {
+    background: red;
 }
 /* Medium screens */
 @media all and (min-width: 600px) {
     /* Both sidebars share a row */
-    .aside {flex: 1 auto;}
-    .header {flex-wrap: wrap;}
-    .navigation {order: 2; background: #333; width: 100%}        
+    .aside { flex: 1 auto; }
 }
 /* Large screens */
-@media all and min-width: 800px) {
+@media all and (min-width: 800px) {
     /* Invert order of first sidebar and main
-     * and tell the main element to take twice as much width as the sidebars
+     * and tell the main element to take twice * as much width as the sidebars
      */
-    .main {flex: 2 0px;}
-    .aside-1 {order: 1; }
-    .main {order: 2; }
-    .aside-2 {order: 3;}
-    .footer {order: 4;}
-    
-    .date-today {width: 100%}
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
 }
 .sign-out-link {
-    sont-size: 0.8rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-}
-.metrics-today {
-    background: transparent;
-    text-transform: uppercase;
-    color: black;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
