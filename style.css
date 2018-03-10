@@ -7,7 +7,7 @@
 /* Core Styles */
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     background-color: #124191;
     color: #fff;
     font-size: 1.1rem;
@@ -56,7 +56,7 @@ p {
 
 #showcase .bg-image {
     position: absolute;
-    background: url('C:\Users\Angel\Documents\GitHub\frenZing\images\showcase-matrix.jpg');
+    background: url("C:\Users\Angel\Documents\GitHub\frenZing\images\showcase-together-world.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,7 +72,7 @@ p {
     padding-bottom: 0;
 }
 
-#showcase .content-wrap, 
+#showcase .content-wrap,
 #section-a .content-wrap {
     padding: 0 1.5rem;
 }
@@ -102,7 +102,7 @@ p {
 }
 
 .card-content {
-    padding: 0.5rem;
+    padding: .5rem;
 }
 
 /* Section C */
@@ -146,16 +146,16 @@ p {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
     }
-       
+
     .content-wrap,
     #section-b ul {
         grid-column: 2/4;
 }
-    
+
     .box, footer div {
         grid-column: span 2;
     }
-    
+
     #section-b ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
