@@ -1,163 +1,58 @@
-/* Reset styles */
 * {
     margin: 0;
-    padding: 0
+    padding: 0active}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1rem;
+    /*justify-items: stretch;
+    align-items: stretch;*/
+    grid-template-areas: 
+        "title title title"
+        "header header header"
+        "content content content"
+        "sidebar sidebar sidebar"
+        "footer footer footer"
 }
 
-/* Core Styles */
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #124191;
-    color: #fff;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    text-align: center;
+.title {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+    
+.header {
+    grid-column: 1/4;
+    grid-row: 1;
 }
 
-img {
-    display: block;
-    width: 100%;
-    height: auto;
+.content {
+    grid-column: 1/3;
+    grid-row: 1/3;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 1rem 0;
+.sidebar {
+    grid-column: 3;
+    grid-row: 1/3;
 }
 
-p {
-    margin: 0;
-    padding: 1rem 0;
+.footer {
+    grid-column: 1/4;
+    grid-row: 1;
 }
 
-.button {
-    display: inline-block;
-    background: transparent;
-    color: white;
-    text-decoration: none;
-    padding: 1rem 3rem;
-    border: 1px solid #fff;
-    margin: .5rem 0;
+@media screen and (min-width: 736px) {
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1rem;
+    /*justify-items: stretch;
+    align-items: stretch;*/
+    grid-template-areas: 
+        ". title title title ."
+        ". header header header ."
+        ". content content sidebar ."
+        ". footer footer footer ."     
 }
-
-.button:hover {
-    background: #eaeaea;
-    color: #333;
-}
-
-/* Header Showcase */
-
-#showcase {
-    min-height: 450px;
-    color: #fff;
-    text-align: center;
-}
-
-#showcase .bg-image {
-    position: absolute;
-    background: url("C:\Users\Angel\Documents\GitHub\frenZing\images\showcase-together-world.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-    z-index: -1;
-    opacity: 0.4;
-}
-
-#showcase h1 {
-    font-family: 'Monoton', cursive;
-    padding-top: 100px;
-    padding-bottom: 0;
-}
-
-#showcase .content-wrap,
-#section-a .content-wrap {
-    padding: 0 1.5rem;
-}
-
-/* Section A */
-#section-a {
-    background: #eaeaea;
-    color: #333;
-    padding-bottom: 2rem;
-}
-
-/* Section B */
-#section-b {
-    padding: 2rem 1rem 1rem;
-}
-
-#section-b ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#section-b li {
-    margin-bottom: 1rem;
-    background: #fff;
-    color: #333;
-}
-
-.card-content {
-    padding: .5rem;
-}
-
-/* Section C */
-
-#section-c .box {
-    padding: 2rem;
-    color: #fff;
-    background: #666
-}
-
-#section-c .box:first-child {
-    background: #2690d4;
-}
-
-/* Section D */
-
-#section-d {
-    background: #fff;
-    color: #333;
-    padding: 2rem;
-}
-
-/* Footer */
-
-#footer {
-    padding: 2rem;
-    background: #000;
-    color: #fff;
-    text-align: center;
-}
-
-#footer a {
-    color: #2690d4;
-    text-decoration: none;
-}
-
-/* Media Query */
-
-@media (min-width: 720px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
-    }
-
-    .content-wrap,
-    #section-b ul {
-        grid-column: 2/4;
-}
-
-    .box, footer div {
-        grid-column: span 2;
-    }
-
-    #section-b ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
-    }
