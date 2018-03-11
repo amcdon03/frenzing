@@ -144,7 +144,7 @@ p {
 @media (min-width: 720px) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 30rem)) 1fr;
     }
 
     .content-wrap,
@@ -158,6 +158,6 @@ p {
 
     #section-b ul {
         display: grid;
-        grid-template-columns: repeat(3, 1.5fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
     }
