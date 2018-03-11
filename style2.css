@@ -15,6 +15,11 @@ body {
     text-align: center;
 }
 
+.wrapper {
+    display: grid;
+    grid-gap: 1rem;
+}
+
 img {
     display: block;
     width: 100%;
@@ -42,27 +47,28 @@ p {
 }
 
 .button:hover, 
-.main-nav a:hover{
+#main-nav a:hover{
     background: #eaeaea;
     color: #333;
 }
 
 /* Navigation */
-.main-nav ul {
+#main-nav ul {
     display: grid;
     padding: 0;
     list-style: none;
 }
 
-.main-nav a {
+#main-nav a {
     display: block;
-    background: #2690d4;
+    background: transparent;
     color: #fff;
     grid-gap: 1rem;
-    padding: 0.8;
+    padding: 0.8rem;
     list-style: none;
     text-decoration: none;
     font-size: 1.1rem;
+    margin: 20px 0 0 20px;
 }
 
 /* Header Showcase */
@@ -74,7 +80,7 @@ p {
 
 #showcase .bg-image {
     position: absolute;
-    background: url("C:\Users\Angel\Documents\GitHub\frenZing\images\showcase-together-world.jpg");
+    background: url("C:\Users\Angel\Documents\GitHub\frenZing\images\smile.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,9 +91,15 @@ p {
 }
 
 #showcase h1 {
-    font-family: 'Monoton', cursive;
+    font-family: 'Pattaya', sans-serif;
     padding-top: 100px;
     padding-bottom: 0;
+    font-weight: 300;
+    font-size: 100px;
+    
+}
+#showcase p {
+    font-size: 35px;
 }
 
 #showcase .content-wrap,
@@ -165,10 +177,10 @@ p {
         grid-template-columns: 1fr repeat(2, minmax(auto, 30rem)) 1fr;
     }
 
-    .main-nav ul {
+    #main-nav ul {
         display: grid;
-        grid-gap: 20px;
-        grid-template-areas: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
     }
     
     .content-wrap,
