@@ -15,11 +15,6 @@ body {
     text-align: center;
 }
 
-.wrapper {
-    display: grid;
-    grid-gap: 1rem;
-}
-
 img {
     display: block;
     width: 100%;
