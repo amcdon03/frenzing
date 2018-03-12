@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Reset styles / Basic normalisation */
 * {
     margin: 0;
     padding: 0
@@ -7,7 +7,7 @@
 /* Core Styles */
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #124191;
     color: #fff;
     font-size: 1.1rem;
@@ -69,18 +69,18 @@ p {
 /* Header Showcase */
 
 #showcase {
-    min-height: 450px;
+    min-height: 500px;
     color: #fff;
 }
 
 #showcase .bg-image {
     position: absolute;
-    background: url("C:\Users\Angel\Documents\GitHub\frenZing\images\smile.jpeg");
+    background: url("https://images.pexels.com/photos/159627/pencils-clips-colour-pencils-foam-rubber-159627.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 450px;
+    height: 500px;
     z-index: -1;
     opacity: 0.4;
 }
@@ -106,9 +106,22 @@ p {
 #section-a {
     background: #eaeaea;
     color: #333;
-    padding-bottom: 2rem;
+    height: auto;
 }
 
+#section-a .bg-image {
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2016/02/08/17/53/silhouettes-1186996_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#section-a h2 {
+    font-size: 50px;
+}
 /* Section B */
 #section-b {
     padding: 2rem 1rem 1rem;
@@ -147,6 +160,7 @@ p {
 #section-d {
     background: #fff;
     color: #333;
+    margin-top: 200px;
     padding: 2rem;
 }
 
@@ -159,6 +173,12 @@ p {
     text-align: center;
 }
 
+/* #footer .col-half-right {
+    text-align: right;
+}
+#footer .col-half-left {
+    text-align: left;
+} */
 #footer a {
     color: #2690d4;
     text-decoration: none;
