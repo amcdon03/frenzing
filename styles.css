@@ -111,7 +111,7 @@ p {
 
 #section-a .bg-image {
     position: absolute;
-    background: url("https://cdn.pixabay.com/photo/2016/10/15/19/39/different-nationalities-1743395_1280.jpg");
+    background: url("https://organicsnewsbrasil.com.br/wp-content/uploads/2017/09/different-nationalities-1743395_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +188,7 @@ p {
 
 /* Media Query */
 
-@media (min-width: 720px) {
+@media (min-width: 700px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 30rem)) 1fr;
