@@ -108,17 +108,17 @@ p {
 }
 
 /* Section B */
-#section-b {
+#section-a {
     padding: 2rem 1rem 1rem;
 }
 
-#section-b ul {
+#section-a ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#section-b li {
+#section-a li {
     margin-bottom: 1rem;
     background: #fff;
     color: #333;
@@ -129,13 +129,13 @@ p {
 }
 
 /* Section A */
-#section-a {
+#section-b {
     background: #eaeaea;
     color: #333;
-    height: auto;
+    height: 600px;
 }
 
-#section-a .bg-image {
+#section-b .bg-image {
     position: absolute;
     background: url("https://organicsnewsbrasil.com.br/wp-content/uploads/2017/09/different-nationalities-1743395_1920.jpg");
     background-position: center;
@@ -145,7 +145,7 @@ p {
     height: 100vh;
 }
 
-#section-a h2 {
+#section-b h2 {
     font-size: 50px;
     color: #eaeaea;
     text-align: right;
@@ -157,7 +157,7 @@ p {
     padding: 2rem;
     color: #fff;
     background: #666;
-    height: 550px;
+    height: auto;
 }
 
 #section-c .box:first-child {
@@ -207,7 +207,7 @@ p {
     }
     
     .content-wrap,
-    #section-b ul {
+    #section-a ul {
         grid-column: 2/4;
 }
 
@@ -215,7 +215,7 @@ p {
         grid-column: span 2;
     }
 
-    #section-b ul {
+    #section-a ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
